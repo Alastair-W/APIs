@@ -1,0 +1,12 @@
+.items{
+    font-size: 0.8rem;
+    background-color: whitesmoke;
+}
+
+.poke{
+    border: 1px solid lightslategray
+}
+
+.hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
