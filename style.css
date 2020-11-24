@@ -3,10 +3,32 @@
     background-color: whitesmoke;
 }
 
+h3{
+    text-transform: capitalize;
+}
+
+.quote{
+    font-style: italic;
+}
 .poke{
-    border: 1px solid lightslategray
+    border: 1px solid lightsteelblue
 }
 
 .hover{
     background-color: rgba(128, 128, 128, 0.5);
+}
+
+.details{
+    text-align: center;
+    border-bottom: 1px solid lightsteelblue;
+    position: sticky;
+}
+
+.name-header{
+    background-color: lightgoldenrodyellow;
+}
+
+ul{
+    text-align: left;
+    text-transform: capitalize;
 }
