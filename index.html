@@ -27,8 +27,8 @@
                 <form id="poke-form">
                     <div class="form-group">
                         <label for="numberOfPokemon">How many Pokemon do you want to see?</label>
-                        <input type="number" class="form-control" id="pokemon-count" min="0" max="898">
-                        <small id="number-help" class="form-text text-muted">Maximum number is 898</small>
+                        <input type="number" class="form-control" id="pokemon-count" min="0" max="1050">
+                        <small id="number-help" class="form-text text-muted">Maximum number is 1050</small>
                     </div>
                     <div>
                         <button class="btn btn-primary">Click here to see the Pokemon</button>
@@ -36,9 +36,24 @@
                 </form>
             </div>
         </div>
-        <div class="row pt-5 pl-3">
-            <button class="btn btn-secondary">Type</button>
+        <div class="row mt-5 details bg-light sticky-top">
+            <div class="col-12 name-header">
+                <h3 class="title"></h3>
+                <span class="quote"></span>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-3 pt-1">
+                <img src="" alt="" class="front">
+            </div>
+            <div class="col-3 pt-1">
+                <img src="" alt="" class="back">
+            </div>
+            <div class="col-6 pt-1">
+                <ul class="poke-info"></ul>
+            </div>
         </div>
+
+
         <div class="row m-5 poke text-center">
         </div>    
     </div>
