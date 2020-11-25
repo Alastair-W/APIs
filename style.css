@@ -9,6 +9,7 @@ h3{
 
 .quote{
     font-style: italic;
+    font-size: 0.8rem;
 }
 .poke{
     border: 1px solid lightsteelblue
@@ -26,6 +27,7 @@ h3{
 
 .name-header{
     background-color: lightgoldenrodyellow;
+    padding-bottom: 5px;
 }
 
 ul{

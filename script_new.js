@@ -51,7 +51,7 @@ $(document).ready(function(){
                 $.get(species_URL, function(res){
                     let quote = res.flavor_text_entries[0].flavor_text;
                     $(`.quote`).replaceWith(`
-                        <span class="quote">${quote}</span>
+                        <span class="quote">"${quote}"</span>
                     `);
                 
                 // console.log(deets);
