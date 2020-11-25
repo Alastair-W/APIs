@@ -2,3 +2,23 @@
     font-size: 0.7em;
     color: red;
 }
+
+.city-name{
+    text-transform: capitalize;
+}
+
+.temp-value, .city-value, .wind-value{
+    color: red
+}
+
+h3{
+    color: lightslategray;
+}
+
+.two-hour, .five-hour, .eight-hour{
+    color: tomato;
+}
+
+.forecast{
+    border-top: 1px solid goldenrod
+}
