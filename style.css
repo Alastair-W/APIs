@@ -26,8 +26,9 @@ h3{
 }
 
 .name-header{
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(250, 250, 0);
     padding-bottom: 5px;
+    background: linear-gradient(90deg, rgba(250,250,0,1) 0%, rgba(250,250,210,1) 100%);
 }
 
 ul{
