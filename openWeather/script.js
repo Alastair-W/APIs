@@ -11,7 +11,8 @@ $(document).ready(function(){
             $('.temp-value').text(faren+`F`);
             $('.city-value').text(`${data.name}`);
             $('.wind-value').text(`${data.wind.speed}`+"m/s");
-            $('.history').append(`${data.name}, ${faren}F </br>`);
+            $('.city-history').append(`${data.name} </br>`);
+            $('.temp-history').append(`${faren}F </br>`);
             
             console.log(history);
         }, `json`);
