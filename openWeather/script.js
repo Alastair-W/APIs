@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    let history = {};
     $(`#city-form`).submit(function(){
         // e.preventDefault()
         let city_input = $(`#city`).val();
@@ -10,9 +11,12 @@ $(document).ready(function(){
             $('.temp-value').text(faren+`F`);
             $('.city-value').text(`${data.name}`);
             $('.wind-value').text(`${data.wind.speed}`+"m/s");
+            $('.history').append(`${data.name}, ${faren}F </br>`);
+            
+            console.log(history);
         }, `json`);
         
-        
+
         let other_url = `https://api.openweathermap.org/data/2.5/forecast?q=${city_input}&appid=${config.myKey}`
         $.get(other_url, function(other_data){
             let twoK = other_data.list[0].main.temp;
@@ -26,5 +30,5 @@ $(document).ready(function(){
             $('.eight-hour').text(eightHour+`F`);
         }, `json`);
         return false;
-    })
+    });
 })
