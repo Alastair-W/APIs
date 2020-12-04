@@ -1,5 +1,6 @@
 $(document).ready(function(){
     let history = {};
+    let count = 0;
     $(`#city-form`).submit(function(){
         // e.preventDefault()
         let city_input = $(`#city`).val();
@@ -11,10 +12,19 @@ $(document).ready(function(){
             $('.temp-value').text(faren+`F`);
             $('.city-value').text(`${data.name}`);
             $('.wind-value').text(`${data.wind.speed}`+"m/s");
-            $('.city-history').append(`${data.name} </br>`);
-            $('.temp-history').append(`${faren}F </br>`);
             
-            console.log(history);
+            history[`${data.name}`]= faren+'F';
+
+            $('.city-history0').text(Object.keys(history)[Object.keys(history).length - 1]);
+            $('.temp-history0').text(Object.values(history)[Object.values(history).length - 1]);
+            $('.city-history1').text(Object.keys(history)[Object.keys(history).length - 2]);
+            $('.temp-history1').text(Object.values(history)[Object.values(history).length - 2]);
+            $('.city-history2').text(Object.keys(history)[Object.keys(history).length - 3]);
+            $('.temp-history2').text(Object.values(history)[Object.values(history).length - 3]);
+            $('.city-history3').text(Object.keys(history)[Object.keys(history).length - 4]);
+            $('.temp-history3').text(Object.values(history)[Object.values(history).length - 4]);
+            $('.city-history4').text(Object.keys(history)[Object.keys(history).length - 5]);
+            $('.temp-history4').text(Object.values(history)[Object.values(history).length - 5]);
         }, `json`);
         
 
